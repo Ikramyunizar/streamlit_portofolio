@@ -1,0 +1,65 @@
+list_of_companies = [
+    {
+        "Company": "Juke Solutions",
+        "range": "April 2024 - September 2025",
+        "position": "Data Engineer",
+        "Projects": [
+            "Kemenag emis Project",
+            "Telkomsel Executive Dashboard",
+            "Telkomsel Odoo Datawarehouse"
+        ],
+        "tools": [
+            "Talend",
+            "Python",
+            "Rundeck",
+            "Cronjob",
+            "Bash",
+            "Odoo",
+            "Mysql",
+            "GCP"
+        ]
+    },
+    {
+        "Company": "XL Axiata",
+        "range": "July 2021 - April 2024",
+        "position": "Data Engineer",
+        "Projects": [
+            "One Day Closing",
+            "Reenginering spark Scripts",
+            "Cloudera to GCP Migrations"
+        ],
+        "tools": [
+            "Ab Initio",
+            "Python",
+            "Bash",
+            "GCP",
+            "Oracle",
+            "Cloudera",
+            "Teradata",
+            "GCP",
+            "SQL"
+        ]
+    },
+    {
+        "Company": "Multipolar Technology Tbk",
+        "range": "September 2025 - Present",
+        "position": "Data Engineer",
+        "Projects": [
+            "Pertamina Migration",
+            "Data Lineage and Management initialization"
+        ],
+        "tools": [
+            "Talend",
+            "Azure",
+            "Python",
+            "Bash"
+        ]
+    }
+    {
+        "Company" : "Plaza Toyota",
+        "range" : "September 2020 - July 2021",
+        "position" : "Full Stack Developer",
+        "projects" : ["Hansa Renkei (Mobile sales application)",""]
+        "tools" : ["PHP","SQL Server","Javascript","FusionCharts","Dynamics AX"]
+    }
+]
