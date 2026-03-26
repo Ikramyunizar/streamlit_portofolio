@@ -1,0 +1,86 @@
+{
+  "candidate": {
+    "name": "Ikram Yunizar",
+    "location": "Jakarta",
+    "contact": {
+      "email": "ikramyunizar@gmail.com",
+      "linkedin": "Linkedin"
+    },
+    "summary": "Data engineer with 5+ years of experience in telco, consulting, and in-house roles[cite: 1]. Focused on providing data-driven solutions and end-to-end pipeline improvements for fast analytics[cite: 2, 3].",
+    "education": {
+      "institution": "Universitas Pembangunan Veteran Jakarta",
+      "degree": "Informatics",
+      "graduation_date": "October 2020",
+      "gpa": "3.75/4.0"
+    }
+  },
+  "expertise": {
+    "certifications": [
+      "Google Associate Cloud Engineer Certified (GCP)",
+      "Astronomer Airflow Fundamentals"
+    ],
+    "technical_skills": [
+      "Performance Optimization",
+      "Data Modeling",
+      "Big Data Processing",
+      "Data Visualization"
+    ],
+    "tools_and_languages": [
+      "GCP", "Docker", "SQL", "Python", "Bash", "Spark", "Airflow", "Shell Scripting"
+    ],
+    "etl_and_bi_tools": [
+      "AB Initio", "Dbt", "dlt", "Talend", "Pentaho", "SSIS", "Metabase", "Superset"
+    ],
+    "databases": [
+      "BigQuery", "Snowflake", "MySQL", "PostgreSQL", "SQL Server", "Oracle", "Cloudera"
+    ]
+  },
+  "work_experience": [
+    {
+      "company": "Multipolar Technology Tbk.",
+      "role": "Data Engineer",
+      "period": "Jul 2025 – Present",
+      "highlights": [
+        "Sole consultant for the EDM team at a major Indonesian energy company[cite: 6].",
+        "Implementing Talend Studio/Cloud and managing data lineage for subholdings[cite: 7].",
+        "Main technical lead for data management and governance initiatives using Talend Data Catalog[cite: 8].",
+        "Developing pipelines using Azure Data Factory [cite: 9].",
+        "Conducting R&D for open-source stacks including DBT, Metabase, and DuckDB[cite: 11]."
+      ]
+    },
+    {
+      "company": "Juke Solutions",
+      "role": "Data Engineer",
+      "period": "Apr 2024 – Jul 2025",
+      "highlights": [
+        "Designed data mart models and pipeline templates for Telkomsel using Python and Cloudera[cite: 11].",
+        "Developed Revenue Outlook Predictions for prepaid and postpaid customers[cite: 12].",
+        "Accelerated the Dikti Module for EMIS, finishing ahead of other modules[cite: 14].",
+        "Created a Data Vault in BigQuery for geospatial Kemenag projects[cite: 16].",
+        "Mentored team members in DuckDB, Spark, and Airflow[cite: 20]."
+      ]
+    },
+    {
+      "company": "IDstar Cipta Teknologi (XL Axiata)",
+      "role": "ETL Developer",
+      "period": "July 2021 – Apr 2024",
+      "highlights": [
+        "Lead developer for 'One Day Closing,' reducing manual labor from days to 2-4 hours using AB Initio[cite: 22].",
+        "Improved report delivery by up to 19 hours through job re-engineering in Cloudera and Spark[cite: 22].",
+        "Developed the Phoenix mobility project for hourly customer location tracking[cite: 25].",
+        "Automated multi-server data transfers to Cloud, SAP, and HDFS targets[cite: 26]."
+      ]
+    },
+    {
+      "company": "Plaza Toyota",
+      "role": "IT Programmer",
+      "period": "Sep 2020 – July 2021",
+      "highlights": [
+        "Developed support applications for operations and marketing[cite: 27].",
+        "Created the Service Order and Purchase Order Audit App[cite: 29].",
+        "Built the Hansa Renkei Sales Tools integrated with WhatsApp Web[cite: 31].",
+        "Developed web-based dashboards and SSRS reports for financial data[cite: 30]."
+      ]
+    }
+  ]
+}

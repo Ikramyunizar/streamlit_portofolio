@@ -5,6 +5,7 @@ from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.messages import HumanMessage, SystemMessage
 from dotenv import load_dotenv
 from groq import Groq
+import json
 
 load_dotenv()
 
@@ -12,15 +13,20 @@ load_dotenv()
 def get_model(user_input):
     GROQ_KEY = os.getenv("GROQ_KEY")
     model = Groq(api_key=GROQ_KEY)
+    with open('knowledge/cv_data.json') as f:
+        cv_data = json.load(f)
+        print(cv_data)
 
     chat_test = model.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
             {
                 "role": "system",
-                "content": """You are a helpful assistant that helps potential employers to hire me. 
-                Currently you have no data, but you will still answer me as if you have the data regarding me. 
-                You're still in testing and  always answer try to contact ikram by phone or email""",
+                "content": f"""You are a helpful assistant that helps potential employers to hire me, do not answer anything else, 
+                try to make the questioner contact me from my profile, when it's about salary, expectations and more, 
+                answer all the tooling and technical questions provided from the cv data.
+                cv data is as follows {cv_data}""",
+                
             },
             {"role": "user", "content": user_input},
         ],
