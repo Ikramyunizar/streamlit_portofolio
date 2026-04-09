@@ -4,7 +4,7 @@
     "location": "Jakarta",
     "contact": {
       "email": "ikramyunizar@gmail.com",
-      "linkedin": "Linkedin"
+      "linkedin": "https://www.linkedin.com/in/ikram-yunizar/"
     },
     "summary": "Data engineer with 5+ years of experience in telco, consulting, and in-house roles[cite: 1]. Focused on providing data-driven solutions and end-to-end pipeline improvements for fast analytics[cite: 2, 3].",
     "education": {
@@ -23,35 +23,51 @@
       "Performance Optimization",
       "Data Modeling",
       "Big Data Processing",
-      "Data Visualization"
+      "Data Visualization",
+      "End to End Analytics"
     ],
-    "tools_and_languages": [
-      "GCP", "Docker", "SQL", "Python", "Bash", "Spark", "Airflow", "Shell Scripting"
+    "other_tools": [
+      "Docker","Airflow", "Rundeck"
     ],
-    "etl_and_bi_tools": [
-      "AB Initio", "Dbt", "dlt", "Talend", "Pentaho", "SSIS", "Metabase", "Superset"
+    "bi_tools": [
+      "Metabase", "Superset", "Power BI", "Tableau"
     ],
-    "databases": [
-      "BigQuery", "Snowflake", "MySQL", "PostgreSQL", "SQL Server", "Oracle", "Cloudera"
+    "etl_tools": [
+      "AB Initio", "Dbt", "Talend", "Pentaho", "SSIS", "Metabase", "Superset"
+    ],
+    "RDBMS": [
+      "SQL Server", "PostgreSQL", "MySQL", "Oracle"
+    ],
+    "Big Data": [
+      "BigQuery", "Snowflake", "Cloudera", "Hive", "Apache Spark", "Apache Iceberg", "Hadoop","Duckdb"
+    ],
+    "Data Management": [
+    "OpenMetadata", "Talend Data Catalog"
+    ],
+    "Programming Languanges" : [
+      "Python", "SQL", "Bash", "Javascript", "R", "PHP"    
+    ],
+    "Python Libraries" : [
+      "dlt", "pandas", "polars", "DuckDB"
     ]
+    
   },
   "work_experience": [
     {
       "company": "Multipolar Technology Tbk.",
       "role": "Data Engineer",
-      "period": "Jul 2025 – Present",
+      "period": "Sep 2025 – Present",
       "highlights": [
-        "Sole consultant for the EDM team at a major Indonesian energy company[cite: 6].",
+        "Consultant for the EDM team at a major Indonesian energy company[cite: 6].",
         "Implementing Talend Studio/Cloud and managing data lineage for subholdings[cite: 7].",
-        "Main technical lead for data management and governance initiatives using Talend Data Catalog[cite: 8].",
-        "Developing pipelines using Azure Data Factory [cite: 9].",
-        "Conducting R&D for open-source stacks including DBT, Metabase, and DuckDB[cite: 11]."
+        "Main technical person for data management and governance initiatives using Talend Data Catalog[cite: 8].",
+        "Managing servers of talend products in Windows Server"
       ]
     },
     {
       "company": "Juke Solutions",
       "role": "Data Engineer",
-      "period": "Apr 2024 – Jul 2025",
+      "period": "Apr 2024 – Sep 2025",
       "highlights": [
         "Designed data mart models and pipeline templates for Telkomsel using Python and Cloudera[cite: 11].",
         "Developed Revenue Outlook Predictions for prepaid and postpaid customers[cite: 12].",
@@ -80,6 +96,15 @@
         "Created the Service Order and Purchase Order Audit App[cite: 29].",
         "Built the Hansa Renkei Sales Tools integrated with WhatsApp Web[cite: 31].",
         "Developed web-based dashboards and SSRS reports for financial data[cite: 30]."
+      ]
+    },
+        {
+      "company": "Infratech Daya Mandiri",
+      "role": "IT Programmer",
+      "period": "Jul 2019 – Dec 2019",
+      "highlights": [
+        "Developed clinic application for small to medium clinics",
+        "Develop inventory stocking features and drugs prescription features"
       ]
     }
   ]

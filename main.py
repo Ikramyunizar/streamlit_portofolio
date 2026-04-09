@@ -1,8 +1,6 @@
 import dotenv
 import streamlit as st
 import os
-from langchain_openai.chat_models import ChatOpenAI
-from langchain_core.messages import HumanMessage, SystemMessage
 from dotenv import load_dotenv
 from groq import Groq
 import json
@@ -22,10 +20,13 @@ def get_model(user_input):
         messages=[
             {
                 "role": "system",
-                "content": f"""You are a helpful assistant that helps potential employers to hire me, do not answer anything else, 
-                try to make the questioner contact me from my profile, when it's about salary, expectations and more, 
-                answer all the tooling and technical questions provided from the cv data.
-                cv data is as follows {cv_data}""",
+                "content": f"""You are an CV profile assistant. 
+                Your primary role is to answer user questions  using the information provided in cv_data. 
+                Do not introduce any information that is not present in the provided text. 
+                If the user's question is not directly related to this topic or cannot be answered using the provided information, 
+                politely add that your info might not complete  
+                if there are no info about it, guide them to contact me through my profile
+                data is as follows {cv_data}""",
                 
             },
             {"role": "user", "content": user_input},
@@ -41,14 +42,24 @@ def get_model(user_input):
 
 def main():
 
+    st.header("Chat with my Ikram AI!")
+    
+
     if "messages" not in st.session_state:
-        st.session_state.messages = []
+        st.session_state.messages = [{"role" : "assistant", "content" : "Ask Me Anything about Ikram!"}]
 
     for message in st.session_state.messages:
+        
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
+     
 
-    submitteds = st.chat_input("testings")
+        # st.session_state.messages.append(
+        #     {"role": "assistant", "content": "}
+        # )
+    
+    submitteds = st.chat_input("Ask me about Ikram!")
+    
     if submitteds:
         with st.chat_message("user"):
             st.markdown(submitteds)
@@ -65,7 +76,6 @@ def main():
     #     if submitted and text:
     #         get_model(text)
 
-    st.info("This profile is still in development.")
 
 
 if __name__ == "__main__":
