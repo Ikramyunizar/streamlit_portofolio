@@ -14,6 +14,11 @@ skills_dict = {
 
 }
 
+github = 'https://github.com/Ikramyunizar'
+with st.sidebar:
+    st.subheader(":small[Contacts :]")
+    st.markdown(":small[✉️ ikramyunizar@gmail.com]")
+    st.markdown(":small[[My Github](%s)]" % github )
 
 
 base_skills = dict(
