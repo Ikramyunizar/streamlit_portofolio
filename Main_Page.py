@@ -13,7 +13,6 @@ def get_model(user_input):
     model = Groq(api_key=GROQ_KEY)
     with open('knowledge/cv_data.json') as f:
         cv_data = json.load(f)
-        print(cv_data)
 
     chat_test = model.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -22,9 +21,8 @@ def get_model(user_input):
                 "role": "system",
                 "content": f"""You are an CV profile assistant. 
                 Your primary role is to answer user questions  using the information provided in cv_data. 
-                Do not introduce any information that is not present in the provided text. 
                 If the user's question is not directly related to this topic or cannot be answered using the provided information, 
-                politely add that your info might not complete  
+                politely add that your info might not complete, no need to inform you have the profile in the backend
                 if there are no info about it, guide them to contact me through my profile
                 data is as follows {cv_data}""",
                 

@@ -3,12 +3,15 @@ import plotly.express as pltex
 import pandas as pd
 
 skills_dict = {
+'Certifications' : ['Google Cloud Certified Associate Cloud Engineer','Astronomer Airflow Fundamentals', 'Data Camp Data Engineering'],
 'Big Data and Database' : ['BigQuery','Cloudera','Iceberg','Hadoop','SQL Server','Teradata','Greenplum','MySQL','PostgreSQL'],
 'Languange' : ['Python','SQL','Bash','R','PHP','Javascript'],
 'Cloud' : ['Google Cloud Platform','Amazon Web Services','Azure'],
 'ETL' : ['Apache Spark','Duckdb','Talend','AB Initio','Pentaho','dlt'],
-'Metadata Management' : ['Talend Data Catalog','OpenMetadata'],
+'Data Management' : ['Talend Data Catalog','OpenMetadata'],
+'Visualization' : ['Tableau','Power BI','Metabase','Superset'],
 'Other Tools' : ['Docker','Git','Airflow','Rundeck']
+
 }
 
 
@@ -25,7 +28,7 @@ head_c.title("Ikram Yunizar")
 
 head_c.header("Data Engineer")
 
-head_c.markdown("""Experienced Data Engineer with 5+ years in consulting, bringing a versatile track record across Telecommunications, Oil & Gas, Retail, Healthcare, and beyond. Adept at architecting scalable data pipelines and infrastructure from the ground up, while also identifying opportunities to modernize and optimize existing legacy systems.
+head_c.markdown("""Experienced Data Engineer with 5+ years in consulting,retail, telco, and government sector bringing a versatile track record across Telecommunications, Oil & Gas, Retail, Healthcare, and beyond. Adept at architecting scalable data pipelines and infrastructure from the ground up, while also identifying opportunities to modernize and optimize existing legacy systems.
  Combines strong technical depth with a problem-solving mindset to deliver practical, 
                 forward-thinking solutions across a wide range of business contexts.
                  """)
@@ -42,8 +45,12 @@ st.plotly_chart(radar_chart)
 
 st.header('Tools and Languanges')
 
+
+    
+
 for title, value in skills_dict.items():
     with st.expander(title):
         st.write(', '.join(value))
+
 
 
