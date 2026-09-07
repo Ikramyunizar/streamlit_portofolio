@@ -15,7 +15,7 @@ def get_model(user_input):
         cv_data = json.load(f)
 
     chat_test = model.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         messages=[
             {
                 "role": "system",
